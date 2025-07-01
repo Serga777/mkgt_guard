@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #58a104;
-    color: #25201f;
+    background-color: #f5f7fa; /* Светлый серо-голубой фон */
+    color: #4a4a4a; /* Тёмно-серый текст */
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -19,13 +19,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c4b8ae;
+    background-color: #6c8ae4; /* Мягкий синий */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    color: #ffffff; /* Белый текст */
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -45,7 +45,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #ffffff; /* Белый текст */
+    color: #ffffff;
     padding: 10px 15px;
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
@@ -54,13 +54,13 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: #a58d7e;
+    background-color: #5a75c7; /* Более тёмный синий */
     transform: translateX(-3px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link.active {
-    background-color: #154d13;
+    background-color: #4caf50; /* Свежий зелёный */
     font-weight: bold;
 }
 
@@ -73,15 +73,20 @@ main {
 
 section {
     margin-bottom: 40px;
+    background-color: #ffffff; /* Белый фон для секций */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 h2, h3 {
-    color: #332d2b; 
+    color: #3a3a3a; /* Чуть темнее серый для заголовков */
     margin-bottom: 15px;
 }
 
 p {
     margin-bottom: 10px;
+    color: #5a5a5a; /* Средний серый для текста */
 }
 
 /* === Фотогалерея на странице практики === */
@@ -97,7 +102,7 @@ p {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    border: 2px solid #034406;
+    border: 2px solid #e0e0e0; /* Светло-серая рамка */
     background-color: white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -105,6 +110,7 @@ p {
 
 .gallery img:hover {
     transform: scale(1.05);
+    border-color: #6c8ae4; /* Синий при наведении */
 }
 
 /* === Диаграммы курсовой работы === */
@@ -116,7 +122,7 @@ p {
 .diagram img {
     max-width: 100%;
     height: auto;
-    border: 2px solid #034406;
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 5px;
     background-color: white;
@@ -126,7 +132,7 @@ p {
 .diagram p {
     margin-top: 10px;
     font-weight: bold;
-    color: #b4aba9;
+    color: #6c8ae4; /* Синий цвет для подписей */
 }
 
 /* === Сертификаты достижений === */
@@ -138,9 +144,14 @@ p {
 .certificate img {
     max-width: 100%;
     height: auto;
-    border: 2px solid #034406;
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 5px;
     background-color: white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Дополнительные акцентные цвета */
+.accent-1 { color: #6c8ae4; } /* Синий */
+.accent-2 { color: #4caf50; } /* Зелёный */
+.accent-3 { color: #ff9800; } /* Оранжевый */
